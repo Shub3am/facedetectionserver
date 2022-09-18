@@ -27,10 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-  database
-    .select("*")
-    .from("users")
-    .then((respond) => res.json(respond));
+  res.json("Server Started");
 });
 
 app.get("/check", (req, res) => {
