@@ -137,7 +137,7 @@ app.post("/imageDetect", (req, res) => {
       res.json(output);
     });
 });
-const PORT = process.env.port;
-app.listen(PORT || 3000, () => {
-  console.log(`Server Started at ${PORT}`);
+
+app.listen(process.env.port || 3000, () => {
+  console.log(`Server Started at ${process.env.PORT}`);
 });
