@@ -6,17 +6,17 @@ const app = express();
 const knex = require("knex");
 const register = require("./controllers/register");
 const login = require("./controllers/login");
-const USER_ID = "shubhamv";
-const APP_ID = "116ff9b8510a4de4bb5aaffa487d6237";
+const USER_ID = "YOUROWN";
+const APP_ID = "YOUROWN";
 const MODEL_ID = "face-detection";
-const PAT = "504063f497e449b7b445dc7106ddab72";
+const PAT = "YOUROWN";
 const database = knex({
   client: "pg",
   connection: {
     host: "127.0.0.1",
     port: 5432,
     user: "postgres",
-    password: "9833",
+    password: "YOUROWN",
     database: "facedetector",
   },
 });
